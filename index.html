@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Конвертація валют</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="" class="nav-brand">Валюти</a>
+            <ul>
+                <li class="nav-item"><a href="about.html">Про нас</a></li>
+                <li>
+                    <a href="" class="nav-item btn btn-default">Регістрація</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container" id="main">
+            <p>Конвертація валюти</p>
+            <div class="grid">
+                <div>
+                    <label for="base-currency">Базова валюта:</label>
+                    <select id="base-currency">
+                        <option value="USD">Американський долар($)</option>
+                        <option value="EUR">Євро (€)</option>
+                        <option value="CAD">Канадський долар (C$)</option>
+                        <option value="INR">Індійскі рупі (₹)</option>
+                        <option value="UAH">Українська гривня (₴)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="target-currency">Target currency:</label>
+                    <select id="target-currency">
+                        <option value="USD">Американський долар ($)</option>
+                        <option value="EUR">Євро (€)</option>
+                        <option value="CAD">Канадський долар (C$)</option>
+                        <option value="INR">Індійскі рупі (₹)</option>
+                        <option value="UAH">Українська гривня (₴)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="result-grid">
+                <p>1</p>
+                <p>=</p>
+                <p id="conversion-result">1</p>
+            </div>
+        </div>
+
+        <footer id="footer-wrapper">
+            <a href="about.html" target="_blank">Про нас</a>
+            <a href="contact.html" target="_blank">Контакти</a>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
